@@ -1,0 +1,206 @@
+\documentclass[11pt,letterpaper]{moderncv}
+\moderncvstyle{casual} % casual banking
+\moderncvcolor{green}
+\usepackage[utf8]{inputenc}
+
+\usepackage[scale=0.75]{geometry}
+
+% Hyperlinks
+\usepackage{hyperref}                    % to use hyperlinks
+\definecolor{linkcolour}{rgb}{0,0.2,0.6} % hyperlinks setup
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
+
+\firstname {Tobias}
+\familyname {Tripp}
+
+\address{3849 N. Damen \#2}{Chicago Illinois}
+\mobile {(312) 213-5476}
+\email {toby.tripp@gmail.com}
+
+\begin{document}
+\maketitle
+
+\section{Profile}
+%\cventry{year--year}{Degree}{Institution}{City}{\textit{Grade}}{Description}
+\subsection{I Value These Things:}
+\cvline{}{
+\begin{itemize}%
+\item \emph{Fast, dependable, automated tests} that quickly direct the developer to the source of any problem as well as document the system.
+\item \emph{Automated build and deployment} for rapid cycles between feature conception and feature delivery.
+\item \emph{Iterative design} that grows solutions to complex problems out of simple, verifiable components.
+\item \emph{Pair-Programming} to maximize the benefits of peer review and knowledge sharing.
+\item \emph{Test-Driven Development} for solid design, complete tests,
+  and confident development.
+\end{itemize}}
+
+\section{Skills}
+\cvitemwithcomment{Proficient}{\small Ruby, Javascript, Java, C/C++}{}
+\cvitemwithcomment{Professional Use}{\small Ada, Perl, Tcl/Tk, Php, Soar}
+{also Awk and Ksh, but that's a story\ldots}
+\cvitemwithcomment{Hobby Use}{\small Prolog, Haskell, Clojure}{}
+
+\section{Experience}
+
+
+\cventry {December 2010-Present} {Senior Developer}
+         {Backstop Solutions Group} {Chicago, Illinois} {} {
+Backstop is an award-winning software provider that creates solutions
+for a wide variety of fund managers.  I work on the InvestorBridge
+platform: a Rails application that integrates with Backstop's Java CRM
+platform to provide an information portal for fund managers to
+more easily release information to their investors.\newline
+While here I've:
+\begin{itemize}
+  \item shared expertise company-wide in such areas as Agile planning,
+    developer testing, Object-Oriented design principles, Javascript
+    and Ruby fundamentals, performance analysis and optimization,
+    debugging, configuration management, and general software design.
+  \item coached developers through the practice of pair-programming.
+  \item given a number of classes in these areas.
+\end{itemize}
+}
+
+\cventry {April 2007-December 2010} {Senior Consultant} {ThoughtWorks} {Chicago, Illinois} {} {
+ThoughtWorks is a global software consultancy with a focus on Agile software delivery and client enablement. While at ThoughtWorks, I was involved with the following clients:}
+\cvitem {}{
+\begin{itemize}
+\item \emph{Major Political Party}: Created a high-performance national
+  voter lookup service to aid their collaborators in sharing voter
+  information and with locating and de-duplicating their large
+  database. The service is imple- mented as a Ruby Rack endpoint in
+  front of a MongoDB database. Also created a similar service in
+  Sinatra for reserving voters with an iPhone canvassing application.
+\item \emph{Major Labor Union}: As part of a new program to organize
+  and train 10,000 of their members, led a team to create a
+  social-networking platform to support collaboration and involvement.
+  The site is implemented in Ruby on Rails and tested with RSpec and
+  Cucumber. It is deployed on Passenger.
+\item \emph{Oracle Mix}: designed, developed, and deployed
+  mix.oracle.com in a compressed engagement of 5 weeks and two
+  developers, working closely with Oracle Labs to iteratively deliver
+  a new customer engagement site for Oracle customers. The site claims
+  to be the first enterprise deployment of JRuby on Rails for customer
+  consumption.
+\item \emph{Sleepy Giant}: during a brief engagement near the
+  beginning of Sleepy Giant's business, I helped coach the company
+  through requirements gathering and categorization as well as
+  coaching the developer through his early practice of Test-Driven
+  Development.
+\item \emph{Leading VOIP Provider}: worked as a developer on the team
+  that rewrote the company's legacy J2EE front- end customer
+  subscription system in Ruby on Rails. Following an initial
+  production release, the team released to production every eight
+  weeks with new features the client had been unable to add to the
+  legacy system without introducing intractable regression issues. At
+  last count, the site handled more than 200,000 hits a day and
+  integrated with 2 legacy databases and more than 20 web services.
+\item \emph{A Leading Wholesale Auto Auction}: This was the largest
+  Ruby on Rails project in terms of size and people to be undertaken
+  in anywhere in the world. The domain involved working on an auction
+  site for trading automo biles which included many custom features
+  for sellers. The task was to deliver this application as soon as
+  possible to help the customer get an edge in the market. Helped on
+  this team as a Ruby on Rails developer to build stories and get this
+  project finished ahead of time. Involved in TDD with RoR,
+  integrating RoR applications with web-services (written in Java), and
+  functional integration testing with Selenium and Ruby.
+\end{itemize}
+}
+
+\cventry {November 2006-January 2007}  {Software Development Consultant}
+         {Menlo Innovations} {Ann Arbor, Michigan} {}
+{
+  Menlo Innovations builds software for a very diverse client set
+  using High Tech Anthropology\textregistered \ and Extreme
+  Programming.  Projects included a web based system to ease the
+  viewing of compound testing results for a large pharmaceutical
+  company and software to power a flow-cytometer for a small Ann Arbor
+  firm.\newline
+  During this brief but valuable engagement, I was able to:
+  \begin{itemize}
+    \item mentor junior developers in Object Oriented Design and in
+      automated testing.
+    \item contribute to architecture discussions and decisions.
+  \end{itemize}
+}
+
+\cventry {July 2005-November 2006} {Software Engineer} {Soar Technology}
+         {Ann Arbor, Michigan} {}
+{
+  Soar Technology develops and researches cognitive software for
+  application in training, modeling \& simulation, intelligence
+  analysis, command and control, robotics, and medical
+  informatics.\newline
+  While at Soar, I:
+  \begin{itemize}
+  \item Developed tools and systems to apply artificial intelligence
+    technology to simulation, modeling, and user interface design
+    problems.
+   \item Created custom IDE applications on top of the Eclipse platform.
+   \item Developed and maintained visualization tools, using Java
+     Swing and SWT, for visualizing the state and actions of
+     artificially intelligent agents. This included mapping, event
+     table, and agent interaction visualizations.
+   \item Instigated the deployment and use of multi-platform
+     continuous integration practices as part of the software
+     development process.
+   \item Integrated several diverse systems, including an agent
+     component in Soar, to model complex social networks.
+   \item Advocated for, and helped implement, an open team room to
+     facilitate communication and collaboration.
+  \end{itemize}
+}
+
+\cventry {May 2002-July 2005} {Research Engineer} {Oasis Advanced Engineering}
+         {Auburn Hills, Michigan} {}
+{
+  Oasis develops hardware and software for advanced military training
+  systems, including technology that embeds training devices into
+  fielded vehicles. These devices allow crews to train while deployed,
+  where normally their skills decline.\newline
+  While at Oasis, I:
+  \begin{itemize}
+  \item Participated in the development of a safety-critical base
+    operating system. The system was targeted for the Visual Display
+    Unit used to monitor a nuclear power plant. The code followed the
+    strict guidelines of the Nuclear Regulatory Commission for
+    software safety.
+  \item Participated in the implementation of several versions of the
+    Abrams Common Software Library (ACSL) and Wolverine Common
+    Software Library (WCSL). These projects entail the conversion of
+    vehicle software for use in all M1A2 Main Battle Tank, M1A2 SEP
+    Main Battle Tank, and Wolverine Mobile Bridge Deployment System
+    training devices. The functionality of the vehicles' embedded
+    operating systems, graphics systems, and communication bus are
+    preserved in a UNIX operating system environment.
+  \end{itemize}
+}
+
+%% \cventry {Summer 2001} {Associate Research Engineer}
+%%          {Oasis Advanced Engineering} {Auburn Hills, Michigan} {}
+%% {
+%%   During this educational summer internship, I:
+%%   \begin{itemize}
+%%   \item Participated in the initial development of the Wolverine
+%%     Common Software Library (WCSL).
+%%   \item Developed, as part of a team, the Digital Display Tabletop
+%%     Trainer Wolverine variant (D2T2-W).  This version of the
+%%     D2T2 system utilizes the Wolverine Common Software Library
+%%     to provide a vehicle display trainer on a desktop PC.
+%%   \end{itemize}
+%% }
+
+\section{Education}
+\cventry {2002} {Bachelor of Science, Computer Science with Honors}
+         {Michigan State University} {East Lansing, Michigan} {} {}
+\cventry {1993} {63H10 Tracked Vehicle Maintenance Training}
+         {U.S. Army Ordnance Training Center} {Aberdeen, Maryland} {}
+         {}
+
+\section{Military Service}
+\cventry {1995-2000} {Michigan Army National Guard}
+         {1070th Maintenance Company} {Lansing, Michigan} {} {}
+\cventry {1992-1995} {United States Army}
+         {1st Infantry Division} {Fort Riley, Kansas} {} {}
+
+\end{document}
