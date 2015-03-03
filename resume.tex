@@ -1,53 +1,64 @@
 \documentclass[11pt,letterpaper]{moderncv}
-\moderncvstyle{casual} % casual banking
-\moderncvcolor{green}
 \usepackage[utf8]{inputenc}
+\moderncvstyle{casual}          % casual banking
+\moderncvcolor{green}
+\moderncvicons{awesome}
 
-\usepackage[scale=0.75]{geometry}
+\usepackage[scale=0.75,margin=1.0in]{geometry}
+\setlength{\hintscolumnwidth}{3cm}
 
 % Hyperlinks
-\usepackage{hyperref}                    % to use hyperlinks
+\usepackage[unicode]{hyperref}           % to use hyperlinks
 \definecolor{linkcolour}{rgb}{0,0.2,0.6} % hyperlinks setup
 \hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
 
 \firstname {Tobias}
 \familyname {Tripp}
 
-\email {toby.tripp@gmail.com}
+\email{toby.tripp@gmail.com}
+\social[github]{tobytripp}
 
 \begin{document}
-\maketitle
+\makecvtitle
 
 \section{Profile}
-%\cventry{year--year}{Degree}{Institution}{City}{\textit{Grade}}{Description}
 \subsection{I Value These Things:}
 \cvline{}{
 \begin{itemize}%
-\item \emph{Fast, dependable, automated tests} that quickly direct the developer to the source of any problem as well as document the system.
-\item \emph{Automated build and deployment} for rapid cycles between feature conception and feature delivery.
-\item \emph{Iterative design} that grows solutions to complex problems out of simple, verifiable components.
-\item \emph{Pair-Programming} to maximize the benefits of peer review and knowledge sharing.
+\item \emph{Fast, dependable, automated tests} that quickly direct the
+  developer to the source of any problem as well as document the
+  system.
+\item \emph{Automated build and deployment} for rapid cycles between
+  feature conception and feature delivery.
+\item \emph{Iterative design} that grows solutions to complex problems
+  out of simple, verifiable components.
+\item \emph{Pair-Programming} to maximize the benefits of peer review
+  and knowledge sharing.
 \item \emph{Test-Driven Development} for solid design, complete tests,
   and confident development.
 \end{itemize}}
 
 \section{Skills}
 \cvitemwithcomment{Proficient}{\small Ruby, Javascript, Java, C/C++}{}
-\cvitemwithcomment{Professional Use}{\small Ada, Perl, Tcl/Tk, Php, Soar}
-{also Awk and Ksh, but that's a story\ldots}
-\cvitemwithcomment{Hobby Use}{\small Prolog, Haskell, Clojure}{}
+\cvitemwithcomment{Professional}{\small Ada, Clojure, Perl, Tcl/Tk, Php, Soar}
+{\tiny also Awk and Ksh, but that's a story\ldots}
+\cvitemwithcomment{Hobbyist}{\small Prolog, Haskell}{}
 
 \section{Experience}
 
+%\cventry{year--year}{Degree}{Institution}{City}{\textit{Grade}}{Description}
 
-\cventry {December 2010-Present} {Senior Developer}
-         {Backstop Solutions Group} {Chicago, Illinois} {} {
-Backstop is an award-winning software provider that creates solutions
-for a wide variety of fund managers.  I work on the InvestorBridge
-platform: a Rails application that integrates with Backstop's Java CRM
-platform to provide an information portal for fund managers to
-more easily release information to their investors.\newline
-While here I've:
+\cventry {December 2010--\\Present} {Senior Developer} {Backstop
+  Solutions Group} {Chicago, Illinois} {} { Backstop is an
+  award-winning software provider that creates solutions for a wide
+  variety of fund managers.  I work on the InvestorBridge platform: a
+  Rails application that integrates with Backstop's Java CRM platform
+  to provide an information portal for fund managers to more easily
+  release information to their investors.\newline
+  Complicated permissioning logic is being moved to a service
+  implemented in Clojure that models a graph in a Datomic
+  database.\newline
+  While here I've:
 \begin{itemize}
   \item shared expertise company-wide in such areas as Agile planning,
     developer testing, Object-Oriented design principles, Javascript
@@ -58,14 +69,14 @@ While here I've:
 \end{itemize}
 }
 
-\cventry {April 2007-December 2010} {Senior Consultant} {ThoughtWorks} {Chicago, Illinois} {} {
+\cventry {April 2007--\\December 2010} {Senior Consultant} {ThoughtWorks} {Chicago, Illinois} {} {
 ThoughtWorks is a global software consultancy with a focus on Agile software delivery and client enablement. While at ThoughtWorks, I was involved with the following clients:}
 \cvitem {}{
 \begin{itemize}
 \item \emph{Major Political Party}: Created a high-performance national
   voter lookup service to aid their collaborators in sharing voter
   information and with locating and de-duplicating their large
-  database. The service is imple- mented as a Ruby Rack endpoint in
+  database. The service is implemented as a Ruby Rack endpoint in
   front of a MongoDB database. Also created a similar service in
   Sinatra for reserving voters with an iPhone canvassing application.
 \item \emph{Major Labor Union}: As part of a new program to organize
@@ -79,11 +90,10 @@ ThoughtWorks is a global software consultancy with a focus on Agile software del
   a new customer engagement site for Oracle customers. The site claims
   to be the first enterprise deployment of JRuby on Rails for customer
   consumption.
-\item \emph{Sleepy Giant}: during a brief engagement near the
-  beginning of Sleepy Giant's business, I helped coach the company
-  through requirements gathering and categorization as well as
-  coaching the developer through his early practice of Test-Driven
-  Development.
+\item \emph{Sleepy Giant}: near the beginning of Sleepy Giant's
+  business, I helped coach the company through requirements gathering
+  and categorization as well as coaching the developer through his
+  early practice of Test-Driven Development.
 \item \emph{Leading VOIP Provider}: worked as a developer on the team
   that rewrote the company's legacy J2EE front- end customer
   subscription system in Ruby on Rails. Following an initial
@@ -93,19 +103,17 @@ ThoughtWorks is a global software consultancy with a focus on Agile software del
   last count, the site handled more than 200,000 hits a day and
   integrated with 2 legacy databases and more than 20 web services.
 \item \emph{A Leading Wholesale Auto Auction}: This was the largest
-  Ruby on Rails project in terms of size and people to be undertaken
-  in anywhere in the world. The domain involved working on an auction
-  site for trading automo biles which included many custom features
-  for sellers. The task was to deliver this application as soon as
-  possible to help the customer get an edge in the market. Helped on
-  this team as a Ruby on Rails developer to build stories and get this
-  project finished ahead of time. Involved in TDD with RoR,
-  integrating RoR applications with web-services (written in Java), and
-  functional integration testing with Selenium and Ruby.
+  Ruby on Rails project to be undertaken anywhere in the world. The
+  domain involved working on an auction site for trading automobiles
+  which included many custom features for sellers. Helped on this team
+  as a Ruby on Rails developer to build stories and get this project
+  finished ahead of time. Involved in TDD with RoR, integrating RoR
+  applications with web-services (written in Java), and functional
+  integration testing with Selenium and Ruby.
 \end{itemize}
 }
 
-\cventry {November 2006-January 2007}  {Software Development Consultant}
+\cventry {November 2006--\\January 2007}  {Software Development Consultant}
          {Menlo Innovations} {Ann Arbor, Michigan} {}
 {
   Menlo Innovations builds software for a very diverse client set
@@ -122,7 +130,7 @@ ThoughtWorks is a global software consultancy with a focus on Agile software del
   \end{itemize}
 }
 
-\cventry {July 2005-November 2006} {Software Engineer} {Soar Technology}
+\cventry {July 2005--\\November 2006} {Software Engineer} {Soar Technology}
          {Ann Arbor, Michigan} {}
 {
   Soar Technology develops and researches cognitive software for
@@ -132,16 +140,13 @@ ThoughtWorks is a global software consultancy with a focus on Agile software del
   While at Soar, I:
   \begin{itemize}
   \item Developed tools and systems to apply artificial intelligence
-    technology to simulation, modeling, and user interface design
-    problems.
+    technology to simulation, modeling, and user interface design.
    \item Created custom IDE applications on top of the Eclipse platform.
-   \item Developed and maintained visualization tools, using Java
-     Swing and SWT, for visualizing the state and actions of
-     artificially intelligent agents. This included mapping, event
-     table, and agent interaction visualizations.
+   \item Developed and maintained tools, using Java Swing and SWT, for
+     visualizing the state and actions of AI agents. This included
+     mapping, event table, and agent interaction visualizations.
    \item Instigated the deployment and use of multi-platform
-     continuous integration practices as part of the software
-     development process.
+     continuous integration practices.
    \item Integrated several diverse systems, including an agent
      component in Soar, to model complex social networks.
    \item Advocated for, and helped implement, an open team room to
@@ -149,7 +154,7 @@ ThoughtWorks is a global software consultancy with a focus on Agile software del
   \end{itemize}
 }
 
-\cventry {May 2002-July 2005} {Research Engineer} {Oasis Advanced Engineering}
+\cventry {May 2002--\\July 2005} {Research Engineer} {Oasis Advanced Engineering}
          {Auburn Hills, Michigan} {}
 {
   Oasis develops hardware and software for advanced military training
@@ -190,15 +195,15 @@ ThoughtWorks is a global software consultancy with a focus on Agile software del
 
 \section{Education}
 \cventry {2002} {Bachelor of Science, Computer Science with Honors}
-         {Michigan State University} {East Lansing, Michigan} {} {}
+         {\newline Michigan State University} {East Lansing, Michigan} {} {}
 \cventry {1993} {63H10 Tracked Vehicle Maintenance Training}
-         {U.S. Army Ordnance Training Center} {Aberdeen, Maryland} {}
+         {\newline U.S. Army Ordnance Training Center} {Aberdeen, Maryland} {}
          {}
 
 \section{Military Service}
-\cventry {1995-2000} {Michigan Army National Guard}
-         {1070th Maintenance Company} {Lansing, Michigan} {} {}
-\cventry {1992-1995} {United States Army}
+\cventry {1995--2000} {Michigan Army National Guard}
+         {\newline 1070th Maintenance Company} {Lansing, Michigan} {} {}
+\cventry {1992--1995} {United States Army}
          {1st Infantry Division} {Fort Riley, Kansas} {} {}
 
 \end{document}
