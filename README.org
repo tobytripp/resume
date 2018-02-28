@@ -1,0 +1,18 @@
+# -*- coding: utf-8 -*-
+* Résumé
+
+  My Résumé
+
+** Source File
+
+   [[file:resume.tex][resume.tex]]
+
+** LaΤεχ installation
+
+   - On a Mac:
+     #+BEGIN_SRC sh
+       brew cask install mactex
+     #+END_SRC
+     or just src_sh{make}
+   - Elsewhere:
+     May I never have to find out…
