@@ -4,8 +4,8 @@
 \moderncvcolor{green}
 \moderncvicons{awesome}
 
-\usepackage[scale=0.75,margin=1.0in]{geometry}
-\setlength{\hintscolumnwidth}{3cm}
+\usepackage[scale=0.75,margin=0.7in]{geometry} % showframe
+\setlength{\hintscolumnwidth}{2.5cm}
 
 % Hyperlinks
 \usepackage[unicode]{hyperref}           % to use hyperlinks
@@ -17,26 +17,43 @@
 
 \email{toby@tripp.net}
 \social[github]{tobytripp}
+\social[twitter]{tobytripp}
 
 \begin{document}
 \makecvtitle
 
 \section{Profile}
-\subsection{I Value These Things:}
-\cvline{}{
-  \begin{itemize}%
-  \item \emph{Fast, dependable, automated tests} that quickly direct the
-    developer to the source of any problem as well as document the system.
-  \item \emph{Automated build and deployment} for rapid cycles between feature
-    conception and feature delivery, with True \emph{Continuous
-      Integration} to empower the business to make release decisions without constraint.
-  \item \emph{Iterative design} that grows solutions to complex problems
-    out of simple, verifiable components.
-  \item \emph{Pair-Programming} to maximize the benefits of peer-review
-    and knowledge sharing.
-  \item \emph{Test-Driven Development} for solid design, complete tests,
-    and confident development.
-\end{itemize}}
+
+\begin{minipage}{\textwidth}
+  \setlength{\hintscolumnwidth}{0.5cm}
+  \setlength{\maincolumnwidth}{\textwidth-1cm}
+  \subsection{I Value:}
+
+  \begin{cvcolumns}
+    \cvcolumn[0.4]{Outcomes}{%
+      \begin{itemize}%
+      \item \emph{Practice over Heroics}
+      \item \emph{Gently exceed customer expectations}
+      \item \emph{There is} always \emph{more to learn}
+      \item \emph{Collaboration over Competition}
+    \end{itemize}}
+    \cvcolumn{Supported by}{%
+      \begin{itemize}%
+      \item \emph{Fast, dependable, automated tests} quickly direct the
+        developer to problems and document the system.
+      \item \emph{Automated build and deployment} cycle rapidly between
+        conception and delivery, with True \emph{Continuous
+          Integration} for release decisions without constraint.
+      \item \emph{Iterative designs} grow solutions to complex problems
+        from simple components.
+      \item \emph{Pair-Programming} maximizes peer-review
+        and shares knowledge.
+      \item \emph{Test-Driven Development} toward solid design, complete tests,
+        and confident development.
+    \end{itemize}}
+  \end{cvcolumns}
+\end{minipage}
+
 
 \section{Skills}
 \cvitemwithcomment{Proficient}{\small Ruby, Clojure, Javascript, C}{}
@@ -49,7 +66,7 @@
 %\cventry{year--year}{Degree}{Institution}{City}{\textit{Grade}}{Description}
 
 \cventry{May 2015-\\January 2018} {Lead Software Developer} {Goldstar
-  Learning} {Chicago, Illinois} {} { % 
+  Learning} {Chicago, Illinois} {} { %
   Goldstar produces \href{https://www.masterymanager.com}{masterymanager.com},
   an assessment and reporting tool for K-12 teachers and administrators.  Once
   administered, educators can produce a set of reports to demonstrate the
