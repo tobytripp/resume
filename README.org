@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 * Résumé
 
-  My Résumé
+  My [[file:resume.pdf][Résumé]]
 
 ** Source File
 
