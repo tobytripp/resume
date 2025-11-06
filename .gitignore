@@ -25,3 +25,6 @@
 *.maf
 *.mtc
 *.mtc0
+/_region_.pdf
+/_region_.tex
+/auto/
